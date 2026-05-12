@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezk Youssef - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Rezk Youssef Rezk</h1>
+  <p>Data Analyst | C++ Instructor | CS Student</p>
+  <nav>
+    <button onclick="showPage('personal')">Personal Info</button>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('projects')">Projects</button>
+    <a href="Rezk Youssef CV.pdf" target="_blank" class="project-link sales-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">Download CV</a>
+  </nav>
+</header>
+
+<section id="personal" class="page active">
+  <h2>Personal Information</h2>
+  <div class="container">
+    <div class="card">
+      <h3>About Me</h3>
+      <p>
+        Motivated Computer Science student and aspiring Data Analyst with a strong foundation in algorithms and problem-solving (ICPC). 
+        Eager to apply analytical skills and machine learning knowledge to drive data-driven insights
+      </p>
+    </div>
+    <div class="card">
+      <h3>Contact Details</h3>
+      <p>
+        📞 <a href="tel:+201017486134" class="contact-link">+20101 748 6134</a> <br><br>
+        📧 <a href="mailto:rezq.yussef@gmail.com" class="contact-link">rezq.yussef@gmail.com</a><br><br>
+        📍 Cairo, Egypt <br><br>
+        🔗 <a href="https://github.com/TechnoRezk2004" target="_blank" class="github-link">GitHub Profile</a><br><br>
+        🎓 B.Sc. in Computer Science (GPA: 3.44) <br><br>
+        ⏳ Expected Graduation: 2027 
+      </p>
+      <br>
+      <a href="Rezk Youssef CV.pdf" target="_blank" class="project-link sales-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">📄 View Full CV</a>
+    </div>
+  </div>
+  <br> <br>
+
+   <nav>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('projects')">Projects</button>
+  </nav>
+</section>
+
+<section id="skills" class="page">
+  <h2>Technical Skills</h2>
+  <div class="container">
+    <div class="card">
+      <h3>Data Analysis</h3>
+      <p>Python (Pandas, NumPy), Plotly Dash, Matplotlib, BeautifulSoup (Web Scraping).</p>
+    </div>
+    <div class="card">
+      <h3>Programming</h3>
+      <p>Advanced C++, Python, and SQL.</p>
+    </div>
+    <div class="card">
+      <h3>Tools</h3>
+      <p>Git, GitHub, VS Code, Microsoft Excel.</p>
+    </div>
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <p>Problem Solving (ICPC), Technical Training, and Communication.</p>
+    </div>
+  </div>
+  <br> <br>
+   <nav>
+    <button onclick="showPage('personal')">Personal Info</button>
+    <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('projects')">Projects</button>
+  </nav>
+</section>
+
+<section id="experience" class="page">
+  <h2>Experience & Training</h2>
+  <div class="container">
+    <div class="card">
+      <h3>Data Science Track (DEPI)</h3>
+      <p>
+        Digital Egypt Pioneers Initiative (Nov '25 - Jul '26). 
+        Mastered data visualization and automated collection using Python and SQL.
+      </p>
+    </div>
+    <div class="card">
+      <h3>C++ Instructor</h3>
+      <p>
+        ICPC Community @ Future Academy (Oct '25 - Present). 
+        Instructed students in Advanced C++, Data Structures, and Algorithms.
+      </p>
+    </div>
+  </div>
+  <br> <br>
+   <nav>
+    <button onclick="showPage('personal')">Personal Info</button>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('projects')">Projects</button>
+  </nav>
+</section>
+
+<section id="projects" class="page">
+  <h2>Featured Projects</h2>
+  <div class="container">
+    <div class="card">
+      <div class="card-header">
+        <h3>📊 Sales Performance Dashboard</h3>
+        <span class="badge analysis">Data Analysis</span>
+      </div>
+      <p>An interactive business intelligence tool designed to monitor retail performance.</p>
+      <ul class="project-list">
+        <li>Developed with <b>Python</b> & <b>Plotly Dash</b> for real-time interactivity.</li>
+        <li>Aggregated data from CSV/SQL using <b>Pandas</b> for KPI calculation.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Plotly</span>
+        <span class="tag">Dash</span>
+      </div>
+      <a href="https://rezkyoussef.pythonanywhere.com/" target="_blank" class="project-link sales-btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h3>🏠 Smart Home Automation</h3>
+        <span class="badge iot">IoT & Embedded</span>
+      </div>
+      <p>Integrated IoT solution using ESP32 and Arduino.</p>
+      <ul class="project-list">
+        <li>Programmed <b>ESP32</b> using optimized C++ firmware.</li>
+        <li>Built a web interface for wireless remote device management.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">C++</span>
+        <span class="tag">ESP32</span>
+        <span class="tag">IoT</span>
+      </div>
+      <a href="https://mostaql.com/portfolio/3370362-my-smart" target="_blank" class="project-link iot-btn">View Project</a>
+    </div>
+  </div>
+<br> <br>
+   <nav>
+    <button onclick="showPage('personal')">Personal Info</button>
+    <button onclick="showPage('skills')">Skills</button>
+    <button onclick="showPage('experience')">Experience</button>
+  </nav>
+</section>
+
+<footer>
+  © 2026 Rezk Youssef | Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

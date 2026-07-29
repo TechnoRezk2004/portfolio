@@ -3,179 +3,184 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rezk Youssef - Portfolio</title>
+  
+  <!-- Open Graph Tags for LinkedIn & Social Media -->
+  <meta property="og:title" content="Rezk Youssef - Data Professional Portfolio">
+  <meta property="og:description" content="Freelance Data Analyst & Data Engineer specializing in ETL pipelines and interactive dashboards.">
+  <meta property="og:type" content="website">
+
+  <title>Rezk Youssef - Data Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Header & Main Sticky Nav -->
 <header>
   <h1>Rezk Youssef Rezk</h1>
-  <p>Data Analyst | C++ Instructor | CS Student</p>
-  <nav>
-    <button onclick="showPage('personal')">Personal Info</button>
-    <button onclick="showPage('skills')">Skills</button>
+  <p class="subtitle">Transforming Raw Data into Actionable Insights</p>
+  <p class="roles">Data Engineer | Freelance Data Analyst | CS Student</p>
+  
+  <nav id="main-nav">
+    <button onclick="showPage('about')">About Me</button>
+    <button onclick="showPage('services')">Services & Skills</button>
+    <button onclick="showPage('projects')">Portfolio</button>
     <button onclick="showPage('experience')">Experience</button>
-    <button onclick="showPage('projects')">Projects</button>
-    <a href="Rezk Youssef CV.pdf" target="_blank" class="project-link sales-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">Download CV</a>
+    <button onclick="showPage('contact')">Contact</button>
   </nav>
 </header>
 
-<section id="personal" class="page active">
-  <h2>Personal Information</h2>
+<!-- 1. About Section -->
+<section id="about" class="page active">
+  <h2>About Me</h2>
   <div class="container">
-    <div class="card">
-      <h3>About Me</h3>
-      <p>
-        Motivated Computer Science student and aspiring Data Analyst with a strong foundation in algorithms and problem-solving (ICPC). 
-        Eager to apply analytical skills and machine learning knowledge to drive data-driven insights
-      </p>
-    </div>
-    <div class="card">
-      <h3>Contact Details</h3>
-      <p>
-        📞 <a href="tel:+201017486134" class="contact-link">+20101 748 6134</a> <br><br>
-        📧 <a href="mailto:rezq.yussef@gmail.com" class="contact-link">rezq.yussef@gmail.com</a><br><br>
-        📍 Cairo, Egypt <br><br>
-        🔗 <a href="https://github.com/TechnoRezk2004" target="_blank" class="github-link">GitHub Profile</a><br><br>
-        🎓 B.Sc. in Computer Science (GPA: 3.44) <br><br>
-        ⏳ Expected Graduation: 2027 
-      </p>
-      <br>
-      <a href="Rezk Youssef CV.pdf" target="_blank" class="project-link sales-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 10px 20px;">📄 View Full CV</a>
-    </div>
-  </div>
-  <br> <br>
-
-   <nav>
-    <button onclick="showPage('skills')">Skills</button>
-    <button onclick="showPage('experience')">Experience</button>
-    <button onclick="showPage('projects')">Projects</button>
-  </nav>
-</section>
-
-<section id="skills" class="page">
-  <h2>Technical Skills</h2>
-  <div class="container">
-    <div class="card">
-      <h3>Data Analysis</h3>
-      <p>Python (Pandas, NumPy), Plotly Dash, Matplotlib, BeautifulSoup (Web Scraping).</p>
-    </div>
-    <div class="card">
-      <h3>Programming</h3>
-      <p>Advanced C++, Python, and SQL.</p>
-    </div>
-    <div class="card">
-      <h3>Tools</h3>
-      <p>Git, GitHub, VS Code, Microsoft Excel.</p>
-    </div>
-    <div class="card">
-      <h3>Soft Skills</h3>
-      <p>Problem Solving (ICPC), Technical Training, and Communication.</p>
-    </div>
-  </div>
-  <br> <br>
-   <nav>
-    <button onclick="showPage('personal')">Personal Info</button>
-    <button onclick="showPage('experience')">Experience</button>
-    <button onclick="showPage('projects')">Projects</button>
-  </nav>
-</section>
-
-<section id="experience" class="page">
-  <h2>Experience & Training</h2>
-  <div class="container">
-    <div class="card">
-      <h3>Data Science Track (DEPI)</h3>
-      <p>
-        Digital Egypt Pioneers Initiative (Nov '25 - Jul '26). 
-        Mastered data visualization and automated collection using Python and SQL.
-      </p>
-    </div>
-    <div class="card">
-      <h3>C++ Instructor</h3>
-      <p>
-        ICPC Community @ Future Academy (Oct '25 - Present). 
-        Instructed students in Advanced C++, Data Structures, and Algorithms.
+    <div class="card" style="grid-column: 1 / -1;">
+      <p style="font-size: 1.1rem; text-align: center; max-width: 900px; margin: auto;">
+        I am a data professional specializing in transforming complex datasets into actionable business intelligence. 
+        With a strong foundation in Computer Science and hands-on experience in distributed ETL pipelines and predictive modeling, 
+        I help businesses make precise, data-driven decisions.
       </p>
     </div>
   </div>
-  <br> <br>
-   <nav>
-    <button onclick="showPage('personal')">Personal Info</button>
-    <button onclick="showPage('skills')">Skills</button>
-    <button onclick="showPage('projects')">Projects</button>
-  </nav>
 </section>
 
+<!-- 2. Services & Skills Section -->
+<section id="services" class="page">
+  <h2>Offered Services & Technical Skills</h2>
+  <div class="container">
+    <div class="card">
+      <h3>📊 Business Intelligence</h3>
+      <p>Designing interactive dashboards and reporting tools using <b>Streamlit</b>, <b>Plotly Dash</b>, and <b>Power BI</b>.</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ Data Engineering & ETL</h3>
+      <p>Building distributed data pipelines and data warehouses using <b>PySpark</b>, <b>HiveQL</b>, and <b>SQL</b> on Linux/Ubuntu environments.</p>
+    </div>
+    <div class="card">
+      <h3>🤖 Predictive Modeling</h3>
+      <p>Developing machine learning models to forecast trends using <b>Scikit-learn</b>, <b>XGBoost</b>, and <b>TensorFlow</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Projects Section -->
 <section id="projects" class="page">
   <h2>Featured Projects</h2>
   <div class="container">
+    
+    <!-- Instacart Market Basket -->
     <div class="card">
       <div class="card-header">
-        <h3>📊 Sales Performance Dashboard</h3>
-        <span class="badge analysis">Data Analysis</span>
+        <h3>🛒 Instacart Analytics</h3>
+        <span class="badge analysis">Big Data & ETL</span>
       </div>
-      <p>An interactive business intelligence tool designed to monitor retail performance.</p>
+      <p>An end-to-end Big Data Engineering pipeline processing over 33.8M order items across 206K users.</p>
       <ul class="project-list">
-        <li>Developed with <b>Python</b> & <b>Plotly Dash</b> for real-time interactivity.</li>
-        <li>Aggregated data from CSV/SQL using <b>Pandas</b> for KPI calculation.</li>
+        <li>Designed the <b>ERD</b> and structured complex datasets into a highly-partitioned warehouse.</li>
+        <li>Executed advanced <b>HiveQL</b> queries for high-throughput data transformation.</li>
+        <li>Engineered an interactive <b>Streamlit</b> dashboard to visualize strategic KPIs.</li>
       </ul>
       <div class="tags">
+        <span class="tag">Apache Hive</span>
+        <span class="tag">PySpark</span>
+        <span class="tag">Streamlit</span>
         <span class="tag">Python</span>
-        <span class="tag">Pandas</span>
-        <span class="tag">Plotly</span>
-        <span class="tag">Dash</span>
       </div>
-      <a href="https://rezkyoussef.pythonanywhere.com/" target="_blank" class="project-link sales-btn">View Project</a>
+      <a href="#" target="_blank" class="project-link neon-btn">View on GitHub</a>
     </div>
-<div class="card">
-      <div class="card-header">
-        <h3>🩺 Diabetes Prediction (AI)</h3>
-        <span class="badge analysis">Deep Learning</span>
-      </div>
-      <p>A Feedforward Neural Network (FNN) model to predict the early onset of diabetes based on medical records.</p>
-      <ul class="project-list">
-        <li>Achieved a high testing accuracy of <b>94%</b> with robust precision and recall.</li>
-        <li>Handled data preprocessing, missing values, and feature scaling using <b>Pandas</b> and <b>Scikit-Learn</b>.</li>
-        <li>Built and optimized the deep learning architecture using <b>TensorFlow</b> & <b>Keras</b>.</li>
-      </ul>
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">TensorFlow</span>
-        <span class="tag">Keras</span>
-        <span class="tag">Pandas</span>
-        <span class="tag">Scikit-Learn</span>
-      </div>
-      <a href="https://huggingface.co/spaces/Rezkyousef/Diabetes-Prediction" target="_blank" class="project-link sales-btn">View Project</a>
-    </div>
+
+    <!-- Employee Attrition -->
     <div class="card">
       <div class="card-header">
-        <h3>🏠 Smart Home Automation</h3>
-        <span class="badge iot">IoT & Embedded</span>
+        <h3>📉 Employee Attrition System</h3>
+        <span class="badge analysis">Machine Learning</span>
       </div>
-      <p>Integrated IoT solution using ESP32 and Arduino.</p>
+      <p>An end-to-end ML pipeline and interactive HR dashboard to predict voluntary employee turnover (DEPI Project).</p>
       <ul class="project-list">
-        <li>Programmed <b>ESP32</b> using optimized C++ firmware.</li>
-        <li>Built a web interface for wireless remote device management.</li>
+        <li>Conducted statistical hypothesis testing on HR data to uncover key attrition drivers.</li>
+        <li>Built a predictive model prioritizing <b>Recall</b> to accurately identify at-risk talent.</li>
+        <li>Deployed a live early-warning architecture using <b>XGBoost</b>, <b>FastAPI</b>, and <b>Docker</b>.</li>
       </ul>
       <div class="tags">
-        <span class="tag">C++</span>
-        <span class="tag">ESP32</span>
-        <span class="tag">IoT</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">Scikit-learn</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Docker</span>
       </div>
-      <a href="https://mostaql.com/portfolio/3370362-my-smart" target="_blank" class="project-link iot-btn">View Project</a>
+      <a href="https://employee-attrition-prediction-and-analysis-project.streamlit.app/" target="_blank" class="project-link neon-btn">View Live Demo</a>
+    </div>
+
+    <!-- NTI Big Data Analytics -->
+    <div class="card">
+      <div class="card-header">
+        <h3>🗄️ NTI Analytics Repository</h3>
+        <span class="badge analysis">Data Engineering</span>
+      </div>
+      <p>A collaborative Big Data solution and reporting dashboard developed for the National Telecommunication Institute.</p>
+      <ul class="project-list">
+        <li>Designed custom <b>ERDs</b> and structured complex datasets for distributed processing.</li>
+        <li>Wrote and executed advanced <b>HiveQL</b> scripts for data extraction and transformation.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Big Data</span>
+        <span class="tag">HiveQL</span>
+        <span class="tag">SQL</span>
+      </div>
+      <a href="#" target="_blank" class="project-link neon-btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. Experience & Education -->
+<section id="experience" class="page">
+  <h2>Experience & Education</h2>
+  <div class="container">
+    <div class="card">
+      <h3>Freelance Data Analyst</h3>
+      <p><b>Independent Consultant (Kafiil / Upwork)</b><br>
+      Delivered end-to-end data solutions for clients. Cleaned, transformed, and analyzed real-world datasets to extract business insights and deliver automated reporting.</p>
+    </div>
+    <div class="card">
+      <h3>C++ Technical Instructor</h3>
+      <p><b>ICPC Community @ Future Academy (Oct '25 - Present)</b><br>
+      Instructed and mentored students in Advanced C++, Data Structures, and Algorithms for competitive programming.</p>
+    </div>
+    <div class="card">
+      <h3>IBM Data Science (DEPI)</h3>
+      <p><b>Digital Egypt Pioneers Initiative (Nov '25 - Jul '26)</b><br>
+      Intensive training in data visualization, machine learning, and automated data pipelines.</p>
+    </div>
+    <div class="card">
+      <h3>B.Sc. in Computer Science</h3>
+      <p><b>Future Academy (Expected 2027)</b><br>
+      Cumulative GPA: 3.44. Specialized in algorithmic problem-solving and software development.</p>
     </div>
   </div>
-<br> <br>
-   <nav>
-    <button onclick="showPage('personal')">Personal Info</button>
-    <button onclick="showPage('skills')">Skills</button>
-    <button onclick="showPage('experience')">Experience</button>
-  </nav>
+</section>
+
+<!-- 5. Contact Section -->
+<section id="contact" class="page">
+  <h2>Let's Work Together</h2>
+  <div class="container" style="max-width: 600px;">
+    <div class="card" style="text-align: center;">
+      <p style="font-size: 1.2rem; margin-bottom: 20px;">Ready to turn your raw data into actionable insights? Feel free to reach out!</p>
+      
+      <p style="margin: 15px 0;">📞 <a href="tel:+201017486134" class="contact-link">+20101 748 6134</a></p>
+      <p style="margin: 15px 0;">📧 <a href="mailto:rezq.yussef@gmail.com" class="contact-link">rezq.yussef@gmail.com</a></p>
+      <p style="margin: 15px 0;">📍 Cairo, Egypt</p>
+      <p style="margin: 15px 0;">🔗 <a href="https://github.com/TechnoRezk2004" target="_blank" class="github-link">GitHub Profile</a></p>
+      
+      <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:rezq.yussef@gmail.com" class="project-link neon-btn solid-neon" style="width: auto; padding: 12px 30px;">Hire Me</a>
+        <!-- إضافة خاصية download لتنزيل السيرة الذاتية مباشرة -->
+        <a href="Rezk Youssef CV.pdf" download="Rezk_Youssef_CV.pdf" class="project-link neon-btn" style="width: auto; padding: 12px 30px;">📄 Download CV</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-  © 2026 Rezk Youssef | Portfolio
+  © 2026 Rezk Youssef | Transforming Data into Value
 </footer>
 
 <script src="script.js"></script>

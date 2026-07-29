@@ -1,5 +1,5 @@
 /**
- * تبديل الصفحات في الـ Portfolio
+ * تبديل الصفحات في الـ Portfolio مع التمرير السلس
  * @param {string} pageId - المعرف الخاص بالقسم المراد عرضه
  */
 function showPage(pageId) {
@@ -16,10 +16,15 @@ function showPage(pageId) {
     if (targetPage) {
         targetPage.classList.add('active');
         
-        // التمرير السلس للأسفل لمشاهدة المحتوى
-        window.scrollTo({ 
-            top: window.innerHeight, 
-            behavior: 'smooth' 
+        // التمرير السلس لبداية القسم بدلاً من الارتفاع العشوائي
+        // بنعمل حساب الـ Sticky Nav عشان المحتوى ميتغطاش تحته
+        const navHeight = document.getElementById('main-nav').offsetHeight;
+        const elementPosition = targetPage.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navHeight;
+
+        window.scrollTo({
+             top: offsetPosition,
+             behavior: "smooth"
         });
     }
 }

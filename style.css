@@ -187,22 +187,30 @@ h2 {
     width: 100%; 
 }
 
-/* تنسيق الصورة الشخصية في الـ Header */
+/* تنسيق الصورة الشخصية في الـ Header (حجم كبير) */
 .profile-pic {
-    width: 150px;           /* حجم الصورة */
-    height: 150px;          /* لازم الطول يساوي العرض عشان تطلع دايرة مظبوطة */
-    border-radius: 50%;     /* ده السحر اللي بيخليها دايرة */
-    object-fit: cover;      /* عشان الصورة متتمطش وتتقص صح جوه الدايرة */
-    border: 3px solid #00ffff; /* إطار نيون سيان متناسق مع الأزرار والكروت */
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* تأثير وهج خفيف للدائرة */
-    margin-bottom: 20px;    /* مسافة بين الصورة والاسم تحتها */
-    transition: 0.3s;       /* أنيميشن ناعم لما الماوس ييجي عليها */
+    width: 220px;           /* زودنا العرض هنا */
+    height: 220px;          /* زودنا الطول هنا (لازم يبقوا متساويين) */
+    border-radius: 50%;     /* شكل دائري */
+    object-fit: cover;      /* الحفاظ على جودة الصورة بدون تمطيط */
+    border: 4px solid #00ffff; /* زودنا سمك الإطار النيون ليتناسب مع الحجم */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4); /* وهج النيون */
+    margin-bottom: 25px;    /* مسافة أوسع قليلاً بين الصورة والاسم */
+    transition: 0.3s;
 }
 
-/* تأثير عند تمرير الماوس على الصورة */
+/* تأثير عند تمرير الماوس */
 .profile-pic:hover {
-    transform: scale(1.05); /* تكبير بسيط */
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.7); /* زيادة الوهج */
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.7);
+}
+
+/* تجاوب الصورة مع شاشات الموبايل الصغيرة (Responsive) */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 170px;       /* حجم أصغر نسبياً للموبايل */
+        height: 170px;
+    }
 }
 
 footer { text-align: center; padding: 30px; background: #020617; color: #64748b; margin-top: 50px; }

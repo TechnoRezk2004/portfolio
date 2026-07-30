@@ -24,8 +24,9 @@
   <nav id="main-nav">
     <button onclick="showPage('about')">About Me</button>
     <button onclick="showPage('education')">Education</button>
-    <button onclick="showPage('projects')">Projects</button>
+    
     <button onclick="showPage('experience')">Experience</button>
+    <button onclick="showPage('projects')">Projects</button>
     <button onclick="showPage('services')">Services & Skills</button>
     <button onclick="showPage('contact')">Contact</button>
   </nav>
@@ -136,18 +137,25 @@
 
 <!-- 4.1. Education -->
 <section id="education" class="page">
-  <h2>Education & Training</h2>
+  <h2>Education</h2>
   <div class="container">
     <div class="card">
       <h3>DEPI - AI & Data Science</h3>
       <p><b>Digital Egypt Pioneers Initiative (Nov '25 - Jul '26)</b><br>
       Intensive training in data visualization, machine learning, and automated data pipelines.</p>
     </div>
+
     <div class="card">
+      <h3>NTI - Big Data Analytics</h3>
+      <p><b>National Telecommunication Institute (jul '26)</b><br>
+      Comprehensive training in big data infrastructure, distributed processing, and analytics. Mastered ecosystem tools including <b>Hadoop</b>, <b>ZooKeeper</b>, <b>Kafka</b>, <b>Flume</b>, <b>PySpark</b>, <b>HBase</b>, <b>Hive</b>, <b>Kibana</b>, and <b>Flink</b>.</p>
+    </div>
+    
+    <!-- <div class="card">
       <h3>B.Sc. in Computer Science</h3>
       <p><b>Future Academy (Expected 2027)</b><br>
       Cumulative GPA: 3.44. Specialized in algorithmic problem-solving and software development.</p>
-    </div>
+    </div> -->
   </div>
 </section>
   
@@ -173,8 +181,7 @@
 </section>
 
 <footer>
-  © 2026 Rezk Youssef | Data Scientest
-</footer>
+© <span id="current-year"></span> Rezk Youssef | Data Scientist</footer>
 
 <script src="script.js"></script>
 </body>

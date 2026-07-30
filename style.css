@@ -214,4 +214,43 @@ h2 {
     }
 }
 
+/* تنسيق نموذج المراسلة (Contact Form) */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: #0f172a;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+/* لون النص الإرشادي (Placeholder) */
+.input-group input::placeholder, 
+.input-group textarea::placeholder {
+    color: #64748b;
+}
+
+/* تأثير عند النقر داخل الـ Text Box */
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* إزالة سهم تكبير وتصغير الـ Textarea عشان ميخربش التصميم */
+.input-group textarea {
+    resize: vertical;
+}
+
 footer { text-align: center; padding: 30px; background: #020617; color: #64748b; margin-top: 50px; }

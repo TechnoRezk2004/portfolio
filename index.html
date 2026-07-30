@@ -161,21 +161,44 @@ Intensive training in full-stack data science workflows. Mastered core skills in
 <!-- 5. Contact Section -->
 <section id="contact" class="page">
   <h2>Let's Work Together</h2>
-  <div class="container" style="max-width: 600px;">
-    <div class="card" style="text-align: center;">
-      <p style="font-size: 1.2rem; margin-bottom: 20px;">Ready to turn your raw data into actionable insights? Feel free to reach out!</p>
-      
+  <div class="container" style="max-width: 1000px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+    
+    <!-- معلومات التواصل وزرار Hire Me -->
+    <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
+      <p style="font-size: 1.2rem; margin-bottom: 20px;">Ready to turn your raw data into actionable insights?</p>
       <p style="margin: 15px 0;">📞 <a href="tel:+201017486134" class="contact-link">+20101 748 6134</a></p>
       <p style="margin: 15px 0;">📧 <a href="mailto:rezq.yussef@gmail.com" class="contact-link">rezq.yussef@gmail.com</a></p>
       <p style="margin: 15px 0;">📍 Cairo, Egypt</p>
       <p style="margin: 15px 0;">🔗 <a href="https://github.com/TechnoRezk2004" target="_blank" class="github-link">GitHub Profile</a></p>
       
-      <div style="margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-        <a href="mailto:rezq.yussef@gmail.com" class="project-link neon-btn solid-neon" style="width: auto; padding: 12px 30px;">Hire Me</a>
-        <!-- إضافة خاصية download لتنزيل السيرة الذاتية مباشرة -->
+      <div style="margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <!-- زرار Hire Me يفتح الإيميل مباشرة في المتصفح -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rezq.yussef@gmail.com" target="_blank" class="project-link neon-btn solid-neon" style="width: auto; padding: 12px 30px;">Hire Me</a>
         <a href="Rezk Youssef CV.pdf" download="Rezk_Youssef_CV.pdf" class="project-link neon-btn" style="width: auto; padding: 12px 30px;">📄 Download CV</a>
       </div>
     </div>
+
+    <!-- نموذج المراسلة (Contact Form) -->
+    <div class="card">
+      <h3 style="text-align: center; margin-bottom: 20px;">Send Me a Message</h3>
+      <!-- استبدل YOUR_FORM_ID بالكود اللي هتاخده من Formspree -->
+      <form action="https://formspree.io/f/xrendnyz" method="POST" class="contact-form">
+        <div class="input-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+          <input type="text" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="input-group">
+          <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+        </div>
+        <button type="submit" class="neon-btn solid-neon" style="width: 100%; border: none;">Send Message 🚀</button>
+      </form>
+    </div>
+
   </div>
 </section>
 
